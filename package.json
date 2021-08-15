@@ -1,16 +1,19 @@
 {
   "name": "node-api-addon",
   "version": "1.0.0",
-  "main": "dist/main.js",
   "private": true,
   "scripts": {
     "build-addon": "node-gyp rebuild",
-    "package": "webpack",
-    "test": "node dist/main.js"
+    "transpile-and-bundle": "webpack --config webpack.config.js",
+    "test": "node dist/bundle.js"
   },
   "gypfile": true,
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
     "node-loader": "^2.0.0",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2"

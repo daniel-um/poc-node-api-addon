@@ -1,5 +1,17 @@
+
+## how to use
+
+### build, bundle, test
+- `yarn build && yarn transpile-and-bundle && yarn test`
+
+## history
+
+### add babel for es6
+- `yarn add -D @babel/cli @babel/preset-env` for minimal babel
+- `yarn add -D babel-loader @babel/core` to transpile via webpack
+
 ### add webpack
-- `yarn add webpack webpack-cli node-loader --save-dev`
+- `yarn add -D webpack webpack-cli node-loader`
 - `touch webpack.config.js`
 - move addon.js to src, rename to main.js
 - require statement now requires `.node` extension
