@@ -1,0 +1,11 @@
+{
+  "name": "node-api-addon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "test": "node addon.js"
+  },
+  "gypfile": true
+}

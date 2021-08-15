@@ -1,0 +1,2 @@
+- bare minimum node-api example
+- `.vscode/c_cpp_propeties` may need to be adjusted to find node_api.h
