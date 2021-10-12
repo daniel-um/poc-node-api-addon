@@ -2,7 +2,8 @@
 ## how to use
 
 ### build, bundle, test
-- `yarn build && yarn transpile-and-bundle && yarn test`
+- may first need to run `node-gyp configure` (try next step and see if it tells you to do this first)
+- `yarn build-addon && yarn transpile-and-bundle && yarn test`
 
 ## history
 
